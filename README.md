@@ -3,9 +3,7 @@
 Node.js SMS helper library (for testing purpose only).
 
 #### Installtion
-```js
-npm install sms-lib-test
-```
+	$ npm install sms-lib-test
 
 #### Getting Started
 
