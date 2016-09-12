@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Playtasy/sms-lib-test.git"
+    "url": "git+https://github.com/iKoala/sms-lib-test.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Playtasy/sms-lib-test/issues"
+    "url": "https://github.com/iKoala/sms-lib-test/issues"
   },
-  "homepage": "https://github.com/Playtasy/sms-lib-test#readme",
+  "homepage": "https://github.com/iKoala/sms-lib-test#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.0.2"
