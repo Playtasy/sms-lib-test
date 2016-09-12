@@ -12,7 +12,7 @@ describe('SMSClient Test Suite', function() {
 
 	describe('#authenticate', function() {
 
-		it('should fail to authenticate and return error 401', function(done) {
+		it('should fail to authenticate and return http error 401', function(done) {
 			SMSClient.authenticate(null, null, function(err) {
 				expect(err).to.be.not.null;
 				expect(err).to.have.property('statusCode', 401);
