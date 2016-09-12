@@ -1,7 +1,7 @@
 'use strict';
 
 var chai = require('chai');
-var SMSClient = require('../lib/sms-client');
+var SMSClient = require('../lib');
 
 var expect = chai.expect;
 
@@ -27,6 +27,16 @@ describe('SMSClient Test Suite', function() {
 			});
 		});
 
+	});
+
+	describe('#send', function() {
+		it('should fail with error -101, no resource permission', function(done) {
+			SMSClient.send('+80000000000', 'Hello World!', function(err, result) {
+				expect(err).to.be.a('Error');
+				expect(err.errorCode).to.be.equal(-101);
+				done();
+			});
+		});
 	});
 
 });
